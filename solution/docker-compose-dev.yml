@@ -1,0 +1,26 @@
+version: '3.6'
+
+services:
+  proxy:
+    build: ./proxy
+    ports:
+    - "80:80"
+  api:
+    build: ./api
+    volumes:
+    - "./api:/usr/src/app"
+    restart: always
+    environment:
+    - SECRET=s3cr3t
+    - DEBUG=1
+    command: ["python", "-m", "tictactoe"]
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile-dev
+    volumes:
+    - "./frontend:/usr/src/app"
+    environment:
+    - NODE_ENV=development
+    - PORT=80
+    command: ["yarn", "start"]

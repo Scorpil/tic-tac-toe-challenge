@@ -1,0 +1,8 @@
+FROM node:11.7-alpine
+
+WORKDIR /usr/src
+ENV NODE_PATH=/usr/src
+COPY ./package.json yarn.lock ./
+RUN yarn
+
+WORKDIR /usr/src/app

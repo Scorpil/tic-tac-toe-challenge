@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  background-color: #283c51;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.square {
+  width: 15vw;
+  height: 15vw;
+  background: #ccc;
+  cursor: pointer;
+  font-size: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  color: white;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+.name-input {
+    height: 5vw;
+    width: 30vw;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.save-button {
+    width: 7vw;
+    background-color: #889;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 2vw;
+}
+
+
+.start-game {
+    width: 20vw;
+    background-color: #889;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.join-game {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #88b;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.watch-game {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #89b;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.pre-game {
+    width: 50vw;
+}
+.start-game {
+    width: 100%;
+    background-color: #889;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+}
+
+.board {
+    width: 90vw;
+}
+
+.boardTable {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.menu {
+    display: inline;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.disabled {
+    color: #777;
+    cursor: not-allowed;
+}
+
+.disabled:hover {
+    opacity: 1;
+}
+
+.newest-cell {
+    background-color: #9ba;
+}
+
+/* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+}

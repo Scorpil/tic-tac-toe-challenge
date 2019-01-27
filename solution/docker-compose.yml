@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  proxy:
+    build: ./proxy
+    ports:
+    - "80:80"
+  api:
+    build: ./api
+    command: ["python", "-m", "tictactoe"]
+    environment:
+    - SECRET='s3cr3t'
+    - PYTHONPATH=.
+  frontend:
+    build: ./frontend

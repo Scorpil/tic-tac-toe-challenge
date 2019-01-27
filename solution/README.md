@@ -9,7 +9,7 @@ Solution consists of three separate apps:
 Docker + docker-compose is used for conterization and orchestration.
 
 ### How to run:
-- To start tic-tac-toe in production mode, run `docker-compose up` in root folder.
+- To start tic-tac-toe in production mode, run `docker-compose up` in `./solution` folder.
 - To start development mode run `docker-compose -f docker-compose-dev.yml up`
 
 Once the service is started, you can play Tic-Tac-Toe on [localhost](http://localhost).
